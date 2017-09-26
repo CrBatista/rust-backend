@@ -1,2 +1,15 @@
 server:
   port: 2030
+  context-path: /rust
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://192.168.99.100:5432/rust_db
+    username: rust
+    password: rust
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
