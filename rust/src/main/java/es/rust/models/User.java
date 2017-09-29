@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="USER")
+@Table(name="RUST_USER")
 public class User {
 
 	@Id
@@ -26,6 +26,9 @@ public class User {
 	
 	@Column(name="EMAIL", nullable=true, length=255)
 	private String email;
+
+	@Column(name="EXPIRATION_TIME", length=255)
+	private Integer expirationTime;
 
 	public String getUsername() {
 		return username;
@@ -66,7 +69,12 @@ public class User {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
-	
-	
+
+	public Integer getExpirationTime() {
+		return expirationTime;
+	}
+
+	public void setExpirationTime(Integer expirationTime) {
+		this.expirationTime = expirationTime;
+	}
 }

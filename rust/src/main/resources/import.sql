@@ -1,0 +1,1 @@
+INSERT INTO RUST_USER (ID, USERNAME, SALT, PASSWORD_ENCODED, EMAIL, EXPIRATION_TIME) VALUES (-1, 'Cristian', E'Cristian\'s Salt', '0b5e330e64bc575d54341fd292e34d920f149aaf74e6c715ef1a99d5fd8411aa', 'cristianbatista@outlook.es', 200);  
